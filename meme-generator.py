@@ -19,8 +19,8 @@ while True:
     headline = f" BREAKING NEWS: {random_characters} {random_actions} {random_places}"
     print("\n" + headline)
 
-    user_input = input("\n Do you want a new headline? (yes/no) ").strip().lower()
+    user_input = input("\n Do you want a new headline? (y/n) ").strip().lower()
 
-    if user_input == "no":
-        print("\n Good Bye!!!")
+    if user_input == "n":
+        print("\n Thanks for using the meme generator. Good Bye!!!")
         break
