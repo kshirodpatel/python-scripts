@@ -35,12 +35,12 @@ for question in questions:
         print(option, end=", ")
     guess = input("Enter (A, B, C, D): ").strip().upper()
     guesses.append(guess)
-    print(answers[question_num])
     if guess == answers[question_num]:
         score += 1
-        print("Correct answer")
+        print("Correct")
     else:
-        print("Incorrect answer")
+        print("Incorrect")
+        print(f"{answers[question_num]} is the correct answer.")
     question_num += 1
     print()
 print("-------------------------------")
